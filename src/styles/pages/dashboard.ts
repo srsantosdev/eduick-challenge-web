@@ -6,7 +6,10 @@ export const ContainerPage = styled.div`
   height: 100%;
 `;
 
-export const ContentPage = styled.div``;
+export const ContentPage = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Header = styled.header`
   height: 6.4rem;
@@ -222,7 +225,7 @@ export const ContainerBannerImage = styled.div`
 
   @media (max-width: 575px) {
     left: initial;
-    right: 5%;
+    right: -2%;
     top: 25%;
   }
 
@@ -231,6 +234,15 @@ export const ContainerBannerImage = styled.div`
     img {
       width: 50%;
     }
+  }
+
+  @media (max-width: 320px) {
+    top: 10%;
+
+    img {
+      width: 40%;
+    }
+    right: -5%;
   }
 `;
 

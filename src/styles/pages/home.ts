@@ -63,6 +63,10 @@ export const ContentPageContainerImage = styled(motion.div)`
   left: -172px;
   z-index: 2;
 
+  > img {
+    width: 100%;
+  }
+
   @media (max-width: 1000px) {
     width: 70%;
   }
